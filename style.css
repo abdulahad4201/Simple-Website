@@ -30,16 +30,33 @@ body{
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 10px 100px;
+    margin: 10px 20px;
     list-style: none;
     
 }
 
 .ahad, #ahad{
     margin: 0 10px;
-    font-size: 18px;
+    font-size: 30px;
     cursor: pointer;
 }
+.ahad:hover{
+    color: rgb(80, 76, 76);
+}
+.ahad::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    display: block;
+    transition: width.5s;
+    background-color: black;
+    border-radius: 20px;
+
+}
+.ahad:hover::after{
+    width: 100%;
+}
+
 .logo{
     font-weight: bold;
     color: rgb(169, 83, 25);
@@ -59,7 +76,8 @@ body{
     left: 10%;
     right: 10%;
     font-size: 24px;
-    color: white;
+    color: rgb(76, 44, 6);
+
 }
 .butt{
     position: absolute;
@@ -78,6 +96,7 @@ body{
     text-align: center;
     font-size: 28px;
     max-width: 80%;
+    color: rgb(211, 140, 52);
 }
 .row{
     display: flex;
